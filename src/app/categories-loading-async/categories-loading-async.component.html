@@ -1,0 +1,13 @@
+
+
+<div>
+
+  <div *ngIf="categoriesObservables | async; else loading">
+    We have {{categories.length}} categories
+  </div>
+
+  <ng-template #loading>
+     loading
+    </ng-template>
+
+</div>
